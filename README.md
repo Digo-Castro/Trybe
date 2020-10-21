@@ -7,7 +7,7 @@
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-## Introdução - Desenvolvimento Web
+## Módulo 1: Fundamentos do Desenvolvimento Web
 
 ### Bloco 1: Unix, Bash e Shell Script
 - [x] 1.3: Introdução - Unix & Shell
