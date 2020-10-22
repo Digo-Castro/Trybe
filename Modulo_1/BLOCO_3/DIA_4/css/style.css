@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: cadetblue;
+    min-width: 1115px;
+}
+main {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+header {
+    background-color: darkcyan;
+}
+header img {
+    width: 150px;
+    display: inline-block;
+    margin: 50px;
+    border-radius: 30px;
+}
+header h1 {
+    margin-left: 10px;
+    margin-top: 85px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 2.5em;
+}
+.nav-line li {
+    margin-top: 10px;
+    display: inline-block;
+}
+.nav-line a {
+    padding: 0px 10px;
+    text-decoration: none;
+    color: white;
+}
+article p {
+    text-align: justify;
+}
+td {
+    border: 2px solid rgb(30, 71, 83);
+}
+.title-table {
+    width: 100%;
+}
+aside {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 80px 0px 0px 10px;
+    background-color: rgb(77, 141, 141);
+    padding: 15px;
+}
+article {
+    width: 70%;
+    display: inline-block;
+}
+.nav-line {
+    background-color: rgb(77, 141, 141);
+    display: block;
+    height: 37px;
+}
+ul {
+    margin: 0;
+}
+table {
+    width: 100%;
+    border: 2px solid white;
+}
+.table-itens {
+    margin-bottom: 50px;
+}
+section a {
+    text-decoration: none;
+    color: rgb(18, 43, 51);
+}
+section li {
+    margin: 5px 0px;
+}
+footer {
+    height: 25px;
+    background-color: teal;
+    margin: 0;
+    padding: 10px 0px 0px 10px;
+}
+footer p{
+    margin: 0;
+}
+.videos {
+    margin-bottom: 50px;
+}
+iframe {
+    border: 1px solid rgb(18, 43, 51);
+}
