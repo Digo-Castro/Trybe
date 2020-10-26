@@ -1,4 +1,6 @@
-## Você irá utilizar esse array para realizar os exercícios do 1 ao 7:
+## Exercícios
+
+### Você irá utilizar esse array para realizar os exercícios do 1 ao 7:
 
 **numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27]**
 
@@ -20,7 +22,7 @@ Q8 - Utilizando for, crie uma array que vá de 1 até 25 e imprima o resultado;
 
 Q9 - Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2.
 
-## Você irá utilizar esse array para realizar os exercícios do 10 e 11:
+### Você irá utilizar esse array para realizar os exercícios do 10 e 11:
 
 **numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27]**
 
