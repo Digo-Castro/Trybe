@@ -9,4 +9,3 @@ function maxChar(arrayStr) {
     }
     return str;
 }
-console.log(maxChar(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']))

@@ -14,5 +14,5 @@ function countRep(arrayNum, num) {
             maiorRepetidor = repetidor;
         }
     }
-    return maiorRepetidor
+    return maiorRepetidor;
 }

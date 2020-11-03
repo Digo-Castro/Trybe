@@ -20,4 +20,3 @@ for (key in info1, info2) {
         console.log('Ambos recorrentes');
     }
 }
-    

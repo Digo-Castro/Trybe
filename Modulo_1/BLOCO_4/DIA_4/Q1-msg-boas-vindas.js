@@ -7,4 +7,3 @@ let info = {
   function saudacoes (info) {
       return ('Bem-vinda, ' + info.personagem)
   }
-  console.log(saudacoes(info))

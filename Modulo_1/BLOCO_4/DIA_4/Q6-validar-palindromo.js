@@ -1,17 +1,17 @@
-let palavra;
-
 function invertePalavra (palavra) {
-    return palavra.split('').reverse().join('')
-};
+    return palavra.split('').reverse().join('');
+}
+
 function validaPalindromo (palavra) {
-    palavraInvertida = invertePalavra(palavra);
-    for (key in palavra, palavraInvertida) {
+    let valid;
+    let palavraInvertida = invertePalavra(palavra);
+    for (let key in palavra, palavraInvertida) {
         if (palavra[key] == palavraInvertida[key]) {
-            return true;
+            valid = true;
         }
         else {
-            return false;
+            valid = false;
         }
     }
-};
-console.log(validaPalindromo("arara"));
+    return valid;
+}
