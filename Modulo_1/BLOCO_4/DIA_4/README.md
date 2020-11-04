@@ -30,3 +30,5 @@ Q10 - Crie uma função que receba um array de inteiros e retorne o inteiro que 
 Q11 - Crie uma função que receba um número inteiro N e retorne o somatório de todos os números de 1 até N.
 
 Q12 - Crie uma função que receba uma string word e outra string ending. Verifique se a string ending é o final da string word. Considere que a string ending sempre será menor que a string word.
+
+Q13 - Faça um programa que receba uma string em algarismos romanos e retorne o número que a string representa.
