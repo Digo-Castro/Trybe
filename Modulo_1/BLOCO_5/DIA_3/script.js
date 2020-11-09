@@ -48,6 +48,7 @@ function btns(str, btnClass) {
   document.getElementsByClassName('buttons-container')[0].appendChild(itemBtn);
 }
 
+// FERIADOS
 btns('Feriados', 'btn-holiday')
 
 const itemsHolidayList = document.getElementsByClassName('holiday');
@@ -55,10 +56,10 @@ const itemsHolidayList = document.getElementsByClassName('holiday');
     itemsHolidayList[index].style.backgroundColor = 'rgb(238,238,238)';
   }
 
-function color() {
-  let attribLen = document.getElementsByClassName('holiday')[0].attributes.style.value;
+function colorGen() {
+  let attribStyle = document.getElementsByClassName('holiday')[0].attributes.style.value;
 
-  if (attribLen !== 'background-color: rgb(130, 226, 41);') {
+  if (attribStyle !== 'background-color: rgb(130, 226, 41);') {
     changeColorHoliday('rgb(130, 226, 41)');
   } else {
     changeColorHoliday('rgb(238,238,238)');
@@ -66,13 +67,35 @@ function color() {
 }
 
 function changeColorHoliday(color) {
-  const itemsHolidayList = document.getElementsByClassName('holiday');
   for (let index = 0; index < itemsHolidayList.length; index += 1) {
     itemsHolidayList[index].style.backgroundColor = color;
   }
 }
 
 const feriados = document.getElementsByClassName('btn-holiday')[0];
-feriados.addEventListener('click', color);
+feriados.addEventListener('click', colorGen);
 
+//SEXTOU
+btns ('Sexta-feira', 'btn-friday')
 
+const itemsFridayList = document.getElementsByClassName('friday');
+
+function changeTextFriday(text) {
+  for(let index = 0; index < itemsFridayList.length; index += 1) {
+    itemsFridayList[index].innerText = text;
+  }
+}
+
+function textGen () {
+  let textInitial = document.getElementsByClassName('friday')[0].innerText;
+  if (textInitial !== '#SEXTOU') {
+    changeTextFriday('#SEXTOU');
+  } else {
+    for (let index = 0; index < itemsFridayList.length; index += 1){
+      itemsFridayList[index].innerText = fridaysList[index];
+    }
+  }
+}
+
+const friday = document.getElementsByClassName('btn-friday')[0];
+friday.addEventListener('click', textGen);
