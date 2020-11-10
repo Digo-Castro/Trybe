@@ -1,0 +1,43 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+section {
+  background-color: grey;
+  color: black;
+  margin-top: 20px;
+  padding: 20px 50px;
+  line-height: 20px;
+}
+
+div {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 0 40px;
+  font-size: 13px;
+}
+
+ul {
+  margin: 0 0 10px 0;
+  text-align: left;
+  padding-left: 15px;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+li {
+  margin-left: 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+li:hover {
+  background-color: rgb(196, 196, 196);
+}
