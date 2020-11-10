@@ -57,12 +57,12 @@ const itemsHolidayList = document.getElementsByClassName('holiday');
   }
 
 function colorGen() {
-  let attribStyle = document.getElementsByClassName('holiday')[0].attributes.style.value;
+  let bgColor = document.getElementsByClassName('holiday')[0].style.backgroundColor;
 
-  if (attribStyle !== 'background-color: rgb(130, 226, 41);') {
+  if (bgColor !== 'rgb(130, 226, 41)') {
     changeColorHoliday('rgb(130, 226, 41)');
   } else {
-    changeColorHoliday('rgb(238,238,238)');
+    changeColorHoliday('rgb(238, 238, 238)');
   }
 }
 
@@ -99,3 +99,78 @@ function textGen () {
 
 const friday = document.getElementsByClassName('btn-friday')[0];
 friday.addEventListener('click', textGen);
+
+//Zoom
+function zoomIn(evt) {
+  evt.target.style.fontSize = '20px';
+  evt.target.style.fontWeight = '800';
+}
+
+const dayTarget = document.getElementById('days');
+
+dayTarget.addEventListener('mouseover', zoomIn);
+
+function zoomOut(evt) {
+  evt.target.style.fontSize = '20px';
+  evt.target.style.fontWeight = '400';
+}
+
+dayTarget.addEventListener('mouseout', zoomOut);
+
+//add Tarefa
+function taskGen(task, cor) {
+  const newTaskSec = document.createElement('section');
+  const newTask = document.createElement('span');
+  newTask.innerText = task;
+  document.getElementsByClassName('my-tasks')[0].appendChild(newTaskSec);
+  newTaskSec.appendChild(newTask);
+  const newColorTask = document.createElement('div');
+  newColorTask.style.backgroundColor = cor;
+  newColorTask.className = 'task';
+  newTaskSec.appendChild(newColorTask);
+}
+
+ taskGen('Evento', 'red');
+ taskGen('Projeto', 'green');
+
+function renameClass(evt) {
+  if (evt.target.className === 'task') {
+    evt.target.className = 'task selected';
+  } else if (evt.target.className === 'task selected') {
+    evt.target.className = 'task';
+  }
+}
+
+const targetTask = document.getElementsByClassName('my-tasks')[0];
+
+targetTask.addEventListener('click', renameClass);
+
+function textColorChange(evt) {
+  if (document.getElementsByClassName('task selected')[0] !== undefined) {
+    if (evt.target.style.color !== document.getElementsByClassName('task selected')[0].style.backgroundColor) {
+      evt.target.style.color = document.getElementsByClassName('task selected')[0].style.backgroundColor;
+    } else {
+      evt.target.style.color = 'rgb(119, 119, 119)';
+    }
+  }
+}
+
+dayTarget.addEventListener('click', textColorChange);
+
+//Input
+let getInput = document.getElementById('task-input');
+const inputBtn = document.getElementById('btn-add');
+const taskList = document.getElementsByClassName('task-list')[0];
+
+function taskItemList() {
+  if (getInput.value.length > 0) {
+    let taskLi = document.createElement('li');
+    taskLi.innerText = getInput.value;
+    taskList.appendChild(taskLi);
+    getInput.value = '';
+  } else {
+    alert ('Não existe compromisso a ser adicionado');
+  }
+}
+
+inputBtn.addEventListener('click', taskItemList);
