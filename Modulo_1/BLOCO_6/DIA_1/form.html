@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <fieldset>
+    <label for="nome">Nome
+      <input type="text" name="nome" maxlength="40" required>
+    </label>
+    <label for="email">E-mail
+      <input type="text"name="email" maxlength="50" required>
+    </label>
+    <label for="cpf">CPF
+      <input type="text" name="cpf" maxlength="11" required>
+    </label>
+    <label for="endereco">Endereço
+      <input type="text" name="endereco" maxlength="200" required>
+    </label>
+    <label for="cidade">Cidade
+      <input type="text" name="cidade" maxlength="28" required>
+    </label>
+    <label for="estado">Estado
+      <select name="estado" id="estados" required></select>
+    </label>
+    <fieldset>
+      <legend>Tipo de moradia:</legend>
+      <label for="casa">Casa
+        <input type="radio" name="tipo" id="casa" value="casa" checked>
+      </label>
+      <label for="apartamento">Apartamento
+        <input type="radio" name="tipo" id="apartamento" value="apartamento">
+      </label>
+    </fieldset>
+  </fieldset>
+  <fieldset>
+    <label for="resumoCurriculo">Resumo do currículo
+      <textarea name="resumoCurriculo" id="resumo-curriculo" cols="30" rows="20" maxlength="1000" placeholder="Máx 1000 caracteres" required></textarea>
+    </label>
+    <label for="cargo">Cargo
+      <input type="text" name="cargo" maxlength="40" required>
+    </label>
+    <label for="descricaoCargo">Descrição das atividades
+      <textarea name="descricaoCargo" id="descricao-cargo" cols="30" rows="10" maxlength="500" placeholder="Máx 500 caracteres"  required></textarea>
+    </label>
+    <label for="dataInicio">Data de início
+      <input type="date" name="dataInicio" id="data-inicio" required>
+    </label>
+  </fieldset>
+  <div class="botoes">
+    <button class="gerar" id="gerar">Gerar</button>
+    <button type="reset" class="limpar" id="limpar"> Limpar</button>
+  </div>
+  <div class="curriculo" id="curriculo">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
