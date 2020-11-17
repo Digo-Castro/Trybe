@@ -13,6 +13,11 @@ const itensInput = document.getElementsByTagName('input');
 const itensTextarea = document.getElementsByTagName('textarea');
 const itensSelect = document.getElementsByTagName('select');
 
+function limpaCurriculo() {
+  for (let index = document.getElementById('curriculo').children.length; index > 0; index -= 1) {
+    document.getElementById('curriculo').children[(index - 1)].outerHTML = '';
+  }
+}
 
 function limpar() {
   for (let index = itensInput.length; index > 0; index -= 1) {
@@ -26,14 +31,39 @@ function limpar() {
     itensTextarea[(index - 1)].value = '';
   }
   for (let index = itensSelect.length; index > 0; index -= 1) {
-    itensSelect[(index-1)].value = '';
+    itensSelect[(index - 1)].value = '';
   }
+  limpaCurriculo();
 }
 
 const bntLimpar = document.getElementById('limpar');
 bntLimpar.addEventListener('click', limpar);
 
+function valida(e) {
+  let validacao = []
+  for (let index = 0; index < itensInput.length; index += 1) {
+    if (itensInput[index].value === '') {
+      validacao.push('invalido');
+    }
+  }
+  if (itensTextarea[0].value === '' || itensTextarea[1].value === '') {
+    validacao.push('invalido');
+  }
+  if (validacao.length > 0) {
+    e.preventDefault();
+    alert('Preencha os campos obrigatórios!');
+    console.log(validacao);
+  } else {
+    gerarCurriculo();
+  }
+}
+
 function gerarCurriculo() {
+  limpaCurriculo();
+  let itemHDois = document.createElement('h2');
+  itemHDois.innerText = 'Currículo';
+  itemHDois.className = 'title is-3';
+  document.getElementById('curriculo').appendChild(itemHDois);
   let itemNome = document.createElement('p');
   itemNome.innerHTML = `<span>Nome: </span> ${itensInput[0].value}`;
   itemNome.className = 'dados';
@@ -62,7 +92,7 @@ function gerarCurriculo() {
   if (itensInput[5].checked === true) {
     itemTipo.innerHTML = `<span>Tipo: </span> ${itensInput[5].value}`;
   } else {
-    itemTipo.innerHTML= `<span>Tipo: </span> ${itensInput[6].value}`;
+    itemTipo.innerHTML = `<span>Tipo: </span> ${itensInput[6].value}`;
   }
   itemTipo.className = 'dados';
   document.getElementById('curriculo').appendChild(itemTipo);
@@ -85,4 +115,33 @@ function gerarCurriculo() {
 }
 
 const btnGerar = document.getElementById('gerar');
-btnGerar.addEventListener('click', gerarCurriculo);
+btnGerar.addEventListener('click', valida);
+
+function classeLabel() {
+  for (let index = 0; index < document.getElementsByTagName('label').length; index += 1) {
+    if (index === 5 || index === 6) {
+      document.getElementsByTagName('label')[index].className = 'radio';
+    } else {
+      document.getElementsByTagName('label')[index].classList.add('label');
+    }
+  }
+}
+
+classeLabel();
+
+function classeInput() {
+  for (let index = 0; index < itensInput.length; index += 1) {
+    if (index === 5 || index === 6) {
+      itensInput[index].classList.add('radio');
+    } else {
+      itensInput[index].classList.add('input');
+      itensInput[index].classList.add('is-rounded');
+    }
+  }
+}
+
+classeInput();
+
+document.getElementsByTagName('form')[0].addEventListener('submit', function (evt) {
+  evt.preventDefault();
+});
