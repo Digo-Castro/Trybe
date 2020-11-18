@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+    <h1 class="title is-2">Gerador de Currículo</h1>
+    <form class="field">
+    <div control>
+      <label for="nome">Nome
+        <input type="text" name="nome" maxlength="40" required>
+      </label>
+      <label for="email">E-mail
+        <input type="email" name="email" maxlength="50" required />
+      </label>
+      <label for="cpf">CPF
+        <input type="text" name="cpf" maxlength="11" required>
+      </label>
+      <label for="endereco">Endereço
+        <input type="text" name="endereco" maxlength="200" required>
+      </label>
+      <label for="cidade">Cidade / Estado
+        <input type="text" name="cidade" maxlength="28" required>
+      </label>
+      <div class="select is-rounded">
+        <select name="estado" id="estados" required></select>
+      </div>
+      <div class="control">
+        <p class="label">Tipo de moradia:</p>
+        <label for="casa" class="radio">
+          <input type="radio" name="tipo" id="casa" value="casa" checked>Casa
+        </label>
+        <label for="apartamento" class="radio">
+          <input type="radio" name="tipo" id="apartamento" value="apartamento">Apartamento
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="control">
+    <label for="resumoCurriculo">Resumo do currículo
+      <textarea name="resumoCurriculo" id="resumo-curriculo" class="textarea" maxlength="1000"
+        placeholder="Máx 1000 caracteres" required></textarea>
+    </label>
+    <label for="cargo">Cargo
+      <input type="text" name="cargo" maxlength="40" required>
+    </label>
+    <label for="descricaoCargo">Descrição das atividades
+      <textarea class="textarea" name="descricaoCargo" id="descricao-cargo" maxlength="500"
+        placeholder="Máx 500 caracteres" required></textarea>
+    </label>
+    <label for="dataInicio">Data de início
+      <input type="date" name="dataInicio" id="data-inicio" required>
+    </label>
+  </div>
+  <div class="botoes control is-grouped">
+    <button type="submit" class="gerar button is-primary is-rounded" id="gerar">Gerar</button>
+    <button type="reset" class="limpar button is-danger is-rounded" id="limpar"> Limpar</button>
+  </div>
+  <div class="curriculo" id="curriculo">
+  </div>
+</form>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+body {
+  margin: 5px;
+  padding: 3% 20%;
+  background-color: lightskyblue;
+}
+
+.botoes {
+  margin: 30px;
+}
+
+p{
+  margin-top: 10px;
+}
+
+.curriculo {
+  background-color: rgb(227, 243, 253);
+  border-bottom: lightslategrey solid 2px;
+  border-right: lightslategrey solid 2px;
+  padding: 20px;
+}
+
+span {
+  font-weight: 600;
+}
