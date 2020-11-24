@@ -1,0 +1,261 @@
+html {
+  box-sizing: border-box;
+  font-family: Geneva, Verdana, sans-serif;
+  font-size: 1em;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 600px) {
+header {
+  background-color: olivedrab;
+  border-bottom: olive solid 2px;
+  color: white;
+  padding: 10px;
+}
+
+header p {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: right;
+}
+
+header nav ul{
+  align-items: center;
+  display: flex;
+  font-size: 1.1em;
+  justify-content: space-around;
+  padding: 0;
+}
+
+header li {
+  list-style: none;
+}
+
+.container {
+  background-color: rgb(240, 247, 232);
+  line-height: 1.6em;
+}
+
+aside {
+  font-size: 1.1em;
+  padding: 0 10px;
+}
+
+.aside-one ul {
+  padding-left: 20px;
+}
+
+.aside-one li {
+  list-style: none;
+}
+
+article {
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+article span {
+  display: block;
+  font-size: 0.6em;
+  margin-bottom: 50px;
+  text-align: right;
+}
+
+article p {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+footer {
+  background-color: rgb(109, 122, 81);
+  border-top: olive solid 2px;
+  padding: 10px 20px;
+}
+
+}
+
+@media screen and (min-width:601px) and (max-width: 800px) {
+  header {
+    background-color: rgb(65, 24, 143);
+    border-bottom: rgb(75, 0, 62) solid 2px;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  header p {
+    font-size: 2.3em;
+    font-weight: 800;
+    text-align: right;
+  }
+  
+  header nav ul{
+    align-items: center;
+    display: flex;
+    font-size: 1.1em;
+    justify-content: left;
+    padding: 0;
+  }
+  
+  header li {
+    list-style: none;
+    margin-left: 10px;
+  }
+  
+  .container {
+    background-color: rgb(245, 232, 247);
+    line-height: 1.6em;
+  }
+  
+  aside {
+    font-size: 1.1em;
+    padding: 0 10px;
+  }
+  
+  .aside-one{
+    float: left;
+    width: 45%;
+  }
+
+  .aside-two {
+    float: right;
+    background-color: rgb(250, 225, 233);
+    border: palevioletred double 2px;
+    border-radius: 2px;
+    margin: 10px 20px 0 0;
+    margin-top: 20px;
+    width: 45%;
+  }
+
+  .aside-one ul {
+    margin-bottom: 50px;
+    padding-left: 20px;
+  }
+  
+  .aside-one li {
+    list-style: none;
+  }
+  
+  article {
+    clear: both;
+    padding: 0 20px;
+  }
+  
+  article span {
+    display: block;
+    font-size: 0.6em;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  article p {
+    font-size: 1.2em;
+    text-align: justify;
+  }
+  
+  footer {
+    background-color: rgb(93, 81, 122);
+    border-top: rgb(28, 0, 128) solid 2px;
+    padding: 10px 20px;
+  }
+  
+  }
+
+  @media screen and (min-width: 801px) {
+    body {
+      width: 100%;
+      background-image: url(https://lh3.googleusercontent.com/proxy/TE-N3htXtLVXJX6fdYAyiLPwpIfKu4pI0pY0XaTt20X7r8qkLZ3RD7g6-U3dXYOHMxHFfRG7G-LsexBWR5nJVbPywsrTGzBk7s9Re_3Ep2wVLZHZrw3DJm6e9JfRnq3yMeQS8I7hmL5k6GCOWrGSqA);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    header {
+      background-color: rgb(143, 24, 50);
+      border-bottom: rgb(75, 0, 62) solid 2px;
+      color: white;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+    
+    header p {
+      font-size: 2.3em;
+      font-weight: 800;
+      margin-right: 50px;
+      text-align: right;
+    }
+    
+    header nav ul{
+      align-items: center;
+      display: flex;
+      font-size: 1.1em;
+      justify-content: left;
+      padding: 0;
+    }
+    
+    header li {
+      list-style: none;
+      margin-left: 10px;
+    }
+    
+    .container {
+      background-color: rgb(247, 232, 233);
+      line-height: 1.6em;
+      width: 1000px;
+      margin: 0 auto;
+    }
+    
+    aside {
+      font-size: 1.1em;
+      padding: 0 10px;
+    }
+    
+    .aside-one{
+      float: left;
+      width: 45%;
+    }
+    
+    .aside-two {
+      float: right;
+      background-color: rgb(238, 215, 217);
+      border: rgb(216, 112, 112) double 2px;
+      border-radius: 2px;
+      margin: 10px 20px 0 0;
+      margin-top: 20px;
+      width: 45%;
+    }
+    
+    .aside-one ul {
+      margin-bottom: 50px;
+      padding-left: 20px;
+    }
+    
+    .aside-one li {
+      list-style: none;
+    }
+    
+    article {
+      clear: both;
+      padding: 0 20px;
+    }
+    
+    article span {
+      display: block;
+      font-size: 0.6em;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    
+    article p {
+      font-size: 1.2em;
+      text-align: justify;
+    }
+    
+    footer {
+      background-color: rgb(70, 1, 7);
+      border-top: rgb(128, 0, 32) solid 2px;
+      color: white;
+      padding: 10px 20px;
+    }
+  }
