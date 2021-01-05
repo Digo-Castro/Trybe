@@ -12,6 +12,6 @@ describe('Testes do Exercício 1', () => {
   });
 
   test('Testa se é lançado um erro quando os parâmetros são 4 e "5".', () => {
-    expect(() => { sum(4, '5') }).toThrow();
+    expect(() => { sum(4, '5'); }).toThrow(/parameters must be numbers/);
   }); 
 });
