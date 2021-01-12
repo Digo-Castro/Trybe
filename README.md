@@ -41,9 +41,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 5.5: Fundamentos - JavaScript - Projetos
 - [x] 5.5: Projeto - Arte com Pixels
 - [x] 5.6: Projeto - Lista de tarefas
-- [ ] 5.5: Projeto (Bônus)- Meme Generator
-- [ ] 5.7: Projeto (Bônus) - Adivinhe a Cor
-- [ ] 5.7: Projeto (Bônus) - Carta Misteriosa
+- [x] 5.5: Projeto (Bônus)- Meme Generator
+- [x] 5.7: Projeto (Bônus) - Adivinhe a Cor
 
 ### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo
 - [x] 6.1: HTML & CSS - Forms
@@ -74,6 +73,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 ### Bloco 10: Testes automatizados com Jest
 - [x] 10.1: Primeiros passos com Jest
-- [ ] 10.2: Jest - Testes Assíncronos
-- [ ] 10.3: Jest - Simulando Comportamentos
-- [ ] 10.4: Projeto - Jest Assíncrono e Mocking
+- [x] 10.2: Jest - Testes Assíncronos
+- [x] 10.3: Jest - Simulando Comportamentos
+- [x] 10.4: Projeto - Jest Assíncrono e Mocking
