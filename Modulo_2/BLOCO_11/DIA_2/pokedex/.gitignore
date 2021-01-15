@@ -18,6 +18,7 @@
 .env.test.local
 .env.production.local
 .eslintrc.js
+.eslintcache
 .editorconfig
 
 package-lock.json
